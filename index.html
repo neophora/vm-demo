@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="keywords" content="ne0fs, neofs, neo, blockchain, fs">
+    <meta name="description" content="free and persistent storage service on neo network">
+    <meta name="author" content="vang1ong7ang">
+    <title>NE0FS</title>
+    <link rel="stylesheet" href="ne0fs.css">
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <a href="https://ne0fs.github.io">NE0FS</a>
+            <p>free and persistent storage service on neo network</p>
+        </div>
+    </header>
+    <div>
+        <div>
+            <div>
+                <input type="file" id="file" />
+            </div>
+            <div>
+                <input type="text" id="link" placeholder="NE0FS LINK" />
+            </div>
+            <div>
+                <p>
+                    <span>status</span>
+                    <span id="status"></span>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <button id="upload" disabled="true">upload</button>
+            </div>
+            <div>
+                <button id="download" disabled="true">download</button>
+            </div>
+            <div>
+                <button id="copy" disabled="true">copy link</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="https://github.com/vang1ong7ang/NE0FS">Github</a>
+        </div>
+    </footer>
+
+    <script src="wasm_exec.js"></script>
+    <script src="ne0fs.js"></script>
+</body>
+
+</html>
